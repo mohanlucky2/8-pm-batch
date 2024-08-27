@@ -1,0 +1,4 @@
+PEM stands for Privacy Enhanced Mail.
+PPK file is a PuTTY Private Key file
+GIT full form is Global Information Tracker
+JSON stands for JavaScript Object Notation
