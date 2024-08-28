@@ -1,0 +1,41 @@
+ mkdit git
+    2  yum install git -y
+    3  mkdir git
+    4  cd git
+    5  git init
+    6  touch abccd
+    7  git status
+    8  git add .,git commit -m "1"
+    9  git add . git commit -m "1"
+   10  git add . 
+   11  git commit -m "1"
+   12  git clone https://github.com/mohanlucky2/git.git
+   13  ls
+   14  mv abccd git/
+   15  cd git/
+   16  git status
+   17  git add .
+   18  git commit -m "2"
+   19  git status
+   20  git push -u origin main
+   21  git -version
+   22  git --version
+   23  mkdir dir1
+   24  cd dir1
+   25  ls
+   26  touch file3
+   27  git init ; git add . ; git commit -m "first commit"
+   28  git status
+   29  git log
+   30  git config --global user.name rammohan
+   31  git config --global user.mail admin@gmail.com
+   32  git config --global --list
+   33  ls
+   34  git brach
+   35  git branch
+   36  git branch -M main
+   37  git branch
+   38  git remote add origin https://github.com/mohanlucky2/git-2.git
+   39  git remote -v
+   40  git push -u origin main
+   41  history
