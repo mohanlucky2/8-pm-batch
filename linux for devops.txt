@@ -1,0 +1,281 @@
+LINUX: Free and Open-source OS
+OS: Operating system -- > communication blw user & system.
+
+TYPES OF OS:
+1. WINDOWS
+2. LINUX
+3. MAC OS
+
+    
+MAIN:
+RedHat
+Ubuntu  (75%)
+Amazon Linux
+
+MODES:
+1. GUI: Its having the Dashboard
+2. CLI: Command line interface (Works with commands only)
+
+HISTORY:
+1991 -- > Linus Torvalds -- > student from finland.
+1991 -- > Want to create an OS that works like UNIX.
+LINUX is Written in C Programming. (1972)
+Firstly he wanted to name it as 'Freax' but later it became 'Linux'.
+1992 -- > Linxu's initial version was released. 
+TOTAL PROGRAMMING LANGUAGES: 700 +
+
+OPEN SOURCE:
+It is free no need to pay money.
+It is available publically.
+We can change the code.
+we can give a copy of the code to other people.
+
+ADVANTAGES:
+It's free and open-source.
+Multi-user based.
+Fewer Bugs.
+Better Performance.
+It can be used for all programming languages.
+It will hang very rarely.
+
+===========================================================================
+ SERVER & COMMANDS
+
+MOBAXTERM LINK:https://mobaxterm.mobatek.net/download-home-edition.html
+
+NOTE: Go to the path where you have keypair
+CONNECT: SELECT THE SERVER -- > CONNECT -- > SSH CLINET -- > COPY TO TERMINAL
+PASTE: 1. RIGHT CLICK 2. SHIFT + INSERT
+
+
+COMMANDS:
+ec2-user: default user       root: admin
+*	: refers all in linux
+
+
+sudo -i		: switch to root user form ec2-user
+clear/ctrl + l	: to clear the screen
+touch file1	: to create a file
+ll/ls		: to list the files
+ll -a / ls -a	: to list the hidden files
+pwd		: to show the present working directory
+cat file1	: to show the content in a file
+more file1	: to show the content in a file
+cat>file1	: to insert the content
+enter, ctrl d	: to save the content
+cat>>file1	: to insert the content more than one time.
+
+cp file1 file2	: to copy the content from file1 to file2
+mv file1 file5	: to rename file1 to file5
+rm file2	: to remove file2
+rm file4 -f	: to remove file4 forcefully
+rm * -f		: to remove all files forcefully
+
+touch java{1..5}: to create series of files
+rm j* -f	: to remove all the files starting with j
+wc file1	: to see number of lines, words & characters.
+
+head file2	: to print top 10 lines
+head -7 file2	: to print top 7 lines
+head -5 file2	: to print top 5 lines
+
+tail file2	: to print bottom 10 lines
+tail -7 file2	: to print bottom 7 lines
+tail -5 file2	: to print bottom 5 lines
+
+FOLDERS = DIRECTORIES
+
+mdkir dir1	: to create a folder
+cd dir1		: to go inside the directory
+cd ..		: to go back one directory
+rmdir dir1	: to remove a directory
+
+echo "hai ramu"> file3
+===============================================================
+
+STATIC: We can't modify
+DYNAMIC: We can mofify
+
+VI/VIM EDITOR: Used to edit files and insert content.
+i: used to modify/insert content
+esc: to get out from insert mode
+
+3. SAVE MODE:
+
+:w	: to save 
+:q	: to quit 
+:wq	: to save & quit
+!	: forcefully
+
+2. INSERT MODE:
+
+A	: End of line
+I	: Starting of line
+O	: Create new line above existing line
+o	: Create new line below existing line
+
+1. COMMAND MODE:
+
+yy	: copies single line
+p	: paste single line
+dd	: delete single line
+u	: undo
+
+nyy	: copies n lines
+np	: pastes n line
+ndd	: delete n lines
+nu	: undo n times
+
+gg	: top of file
+shift+g	: bottom of file
+:15	: to go to line 15
+:set number: print lines inside the file
+---------------------------------------------------
+nano editor:
+
+nano filename
+enter the content
+
+save and exit from the file use the following
+ctrl+x,
+y
+press enter
+
+===========================================================================================================
+
+
+USERS: 
+ec2-user: he is the default user.
+
+root: he is the admin, he will have all permissions.
+superuser: 
+he is a normal user created by root user.
+normal user -- > visudo -- > super user
+
+useradd ramu: to create a user
+cat /etc/passwd: to see the users list.
+
+user -- > GROUP & FOLDER
+
+cat /etc/group: to see the groups list.
+ls /home: to show user folder on home 
+id ramu: to show the user info
+passwd ramu: to assign password for user
+
+NOTE: in linux password will not be visible.
+password -- > more than 8 char. 
+username should not be given as password.
+
+To create super user:
+1. create user (useradd ramu)
+2. password (passwd ramu)
+3. visudo -- > 100 -- > yy & p -- > root=ramu
+
+su - rajesh : to login to super user
+
+NOTE: In linux if you are on non root use sudo command 
+
+
+root -- > normal -- > visudo -- > super user 
+
+logout or ctrl d used to exit from super user.
+
+
+=============================================================
+
+-rw-r--r-- 1 root root 0 Jun  8 16:02 file1
+
+
+TYPE OF FILES:
+-	: Regular file
+b	: Blocked file
+c	: Charcter file
+d	: Directory
+l	: link file
+
+PERMISSION:
+
+rw-r--r--
+r	: read		: 4
+w	: write		: 2
+x	: executable	: 1
+
+user	: rw-	: 4+2+0	: 6
+group	: r--	: 4+0+0	: 4
+others	: r--	: 4+0+0	: 4
+
+
+chmod 777 file1
+chmod 666 file2
+
+1	: acl -- > access control list
+
+
+chown ramu file1: to make ramu as owner to file1
+chgrp ramu file1: to make ramu as group to file1
+chown ramu:ramu file2 : to make ramu user&group for file2
+chown rajesh:ramu file1: rajesh as user & ramu as group
+
+
+groupadd devops	: to create devops group
+usermod -aG devops ramu : to add ramu user to devops group
+usermod -aG aws ramu : to add ramu user to aws group
+
+gpasswd --delete ramu devops : to remove ramu user form devops group
+userdel ramu : to delete ramu user
+
+=======================================================================================================
+
+GREP : Global Regular Expression Print
+to search for a particular word
+
+grep is file1		: to search word is on file1
+grep IS file1 -i	: to avoid the case sensitive
+grep IS file1 -i -v	: to avoid the line which is having word is
+cat file1 | grep is	: to search word is on file1
+cat file1 | grep IS -i	: to avoid the case sensitive
+cat file1 | grep IS -iv : to avoid the line which is having word is
+
+| : is pipe sysmbol -- > to work with pipe we need to have 2 commands
+here 1 st command output will be input of 2 nd command.
+
+
+
+
+
+
+NETWORKING:
+ip addr
+ip addr show
+hostname -i
+ifconfig          -- > all the 4 commands used to show ip address
+
+ping google.com -- > to get response form server
+ping -c 4 google.com
+netstat   --- > to show active internet connections
+ps  -- > to check the process
+kill -9 32555 -- > to kill a process
+ps aux -- > to list process in ids
+
+===========================================================================
+
+LINUX DIRECTORY SYSTEM:
+FHS 
+
+
+bin	: it stores all the binary files and also it stores the commands that had been executed by the user.
+sbin	: it stores the commands that had been executed by the super user.
+boot	: it contains boot images & boot files.
+dev	: it contains all the device files
+etc	: it contains all the host specific system configuration files.
+lib	: it contains all the library files of the system.
+lib64	: it contains all the library files of the system of 64 bit.
+mnt	: it is used for the mounting purpose.
+opt	: it stores all the file details of the 3 rd party when it installed.
+proc	: it is used to see all the processing related files (Hardware details).
+srv	: it stores all the service related information provided by system.
+sys	: it stores any new changes that obtained while changing Hardware.
+tmp	: it stores temperory files and have access to all.
+usr	: it contains local system files which are continuing with the old system architecture.
+var	: it stores all the system services.
+
