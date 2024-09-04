@@ -1,0 +1,183 @@
+ mkdit git
+    2  yum install git -y
+    3  mkdir git
+    4  cd git
+    5  git init
+    6  touch abccd
+    7  git status
+    8  git add .,git commit -m "1"
+    9  git add . git commit -m "1"
+   10  git add . 
+   11  git commit -m "1"
+   12  git clone https://github.com/mohanlucky2/git.git
+   13  ls
+   14  mv abccd git/
+   15  cd git/
+   16  git status
+   17  git add .
+   18  git commit -m "2"
+   19  git status
+   20  git push -u origin main
+   21  git -version
+   22  git --version
+   23  mkdir dir1
+3/08/2024
+==========
+   2  touch file
+    3  mkdir git
+    4  cd git/
+    5  ls -al
+    6  rm -rf .git
+    7  git status
+    8  git init
+    9  git status
+   10  git status
+   11  git add . ; git commit -m "1-commit"
+   12  git status
+   13  git ls-files
+   14  git log
+   15  touch file1
+   16  git status
+   17   git add . ; git commit -m "2-commit"
+   18  git log
+   19  git reset --soft d35a4fd4e33da46c61874f40c33caaa19966c786
+   20  git log
+   21  git status
+   22  git log
+   23   git add . ; git commit -m "2-commit"
+   24  git log
+   25  git reset --mixed 24a86bdcb5e3dded41c2b50d931d396dafb1770c
+   26  git log
+   27  touch file2
+   28   git add . ; git commit -m "3-commit"
+   29  git log
+   30  git reset --mixed 24a86bdcb5e3dded41c2b50d931d396dafb1770c
+   31  git status
+   32  git log
+   33   git add . ; git commit -m "3-commit"
+   34  git log
+   35  git reset --hard 24a86bdcb5e3dded41c2b50d931d396dafb1770c
+   36  git log
+   37  git status
+   38  ls
+   39  ls
+   40  git status
+   41  git ls-files
+   42  touch file2
+   43   git add . ; git commit -m "3-commit"
+   44  git log
+   45  git revert 24a86bdcb5e3dded41c2b50d931d396dafb1770c
+   46  git status
+   47  git log
+   48  ls
+   49  ls -al
+   50  rm -rf .git
+   51  git init
+   52  git status
+   53  rm -rf b*
+   24  cd dir1
+   25  ls
+   26  touch file3
+   27  git init ; git add . ; git commit -m "first commit"
+   28  git status
+   29  git log
+   30  git config --global user.name rammohan
+   31  git config --global user.mail admin@gmail.com
+   32  git config --global --list
+   33  ls
+   34  git brach
+   35  git branch
+   36  git branch -M main
+   37  git branch
+   38  git remote add origin https://github.com/mohanlucky2/git-2.git
+   39  git remote -v
+   40  git push -u origin main
+   41  history
+4/08/2024
+==========
+409  cd git/
+  410  ls -al
+  411  git status
+  412  cat > file2
+  413  cat file2
+  414  git add . ; git commit -m "1-commit"
+  415  git log
+  416  cat file2
+  417  git ls-files
+  418  cat >> file2
+  419  cat file2
+  420  git status
+  421  git add file2
+  422  git status
+  423  git commit -m "2-commit"
+  424  git log
+  425  git revert 7148bec391f70dcebf37d14d5158b4209fce2ef4
+  426  cat file2
+  427  git log
+  428  rm -rf .git
+  429  git init
+  430  git status
+  431  cat file2
+  432  git add .
+  433  git ls-file
+  434  git ls-files
+  435  git restore --staged file2
+  436  git status
+  437  git rm --cached file2
+  438  git status
+  439  git log
+  440  git branch
+  441  ls
+  442  git status
+  443  git add . ; git commit -m "1-commit"
+  444  git status
+  445  git log
+  446  git branch
+  447  rm -rf .git
+  448  git init
+  449  git branch
+  450  ls
+  451  git add . ; git commit -m "1-commit"
+  452  git branch
+  453  git branch ticket
+  454  git branch
+  455  git checkout ticket
+  456  ls
+  457  touch file1
+  458  git status
+  459  git add . ; git commit -m "2-commit"
+  460  git log
+  461  git checkout -b bus
+  462  ls
+  463  touch bus
+  464  git add . ; git commit -m "3-commit"
+  465  git log
+  466  git checkout -b paytm
+  467  git status
+  468  ls
+  469  touch paytm
+  470  git add . ; git commit -m "4-commit"
+  471  git branch
+  472  git checkout bus
+  473  ls
+  474  git checkout paytm paytm
+  475  git checkout paytm
+  476  ls
+  477  git checkout master
+  478  ls
+  479  git checkout bus
+  480  ls
+  481  git merge paytm
+  482  ls
+  483  git branch
+  484  git checkout ticket
+  485  ls
+  486  git merge bus
+  487  ls
+  488  git checkout master
+  489  ls
+  490  git merge ticket
+  491  ls
+  492  git branch
+
+==========
