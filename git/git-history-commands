@@ -181,3 +181,63 @@
   492  git branch
 
 ==========
+6/09/2024
+==========
+ 493  mkdir git-1
+  494  cd git-1/
+  495  touch file-m
+  496  ls -al
+  497  git status
+  498  git init ;git add . ;git commit -m "commit in master"
+  499  git log
+  500  git branch
+  501  git branch branch1
+  502  git branch
+  503  git checkout branch1
+  504  ls
+  505  touch file-b1
+  506  git add . ;git commit -m "commit in b1"
+  507  git branch
+  508  git checkout -b branch2
+  509  git branch
+  510  ls
+  511  touch file-b2
+  512  git add . ;git commit -m "commit in b2"
+  513  git log
+  514  git checkout -b branch3
+  515  touch file-b3
+  516  git add . ;git commit -m "commit in b3"
+  517  git log
+  518  ls
+  519  git checkt branch2
+  520  git checkout branch2
+  521  ls
+  522  git checkout master
+  523  ls
+  524  git merge branch3
+  525  ls
+  526  rm -rf .git
+  527  rm -rf *
+  528  touch file-m
+  529  git init : git add . ; git commit -m "mater"
+  530  git init ; git add . ; git commit -m "mater"
+  531  git branch b1
+  532  git branch b2
+  533  git branch b3
+  534  git branch
+  535  git checkout b1
+  536  ls
+  537  touch file-b1
+  538  git init ; git add . ; git commit -m "b1"
+  539  git checkout b2
+  540  touch file-b2
+  541  git init ; git add . ; git commit -m "b2"
+  542  ls
+  543  git checkout b1
+  544  ls
+  545  git merge b2
+  546  ls
+  547  git checkout master
+  548  ls
+  549  git merge b1
+
