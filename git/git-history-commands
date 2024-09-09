@@ -241,3 +241,71 @@
   548  ls
   549  git merge b1
 
+09/09/2024:
+===========
+438  cd ram/
+  439  ls -al
+  440  rm -rf .git
+  441  rm -rf *
+  442  ls -al
+  443  ls
+  444  touch file-1m
+  445  git init ; git add . ;git commit -m "c1m"
+  446  git log
+  447  touch file-2m
+  448  git init ; git add . ;git commit -m "c2m"
+  449  git log
+  450  git checkout -b feature
+  451  touch file-2f
+  452  git add . ;git commit -m "c1f"
+  453  touch file-f
+  454  git add . ;git commit -m "c2f"
+  455  git log
+  456  git checkout master
+  457  touch file3-m
+  458  git add . ;git commit -m "c3m"
+  459  git rebase 41566e9ef6c06530c28b14ce4d29ecc77be2df4c
+  460  git log
+  461  ls
+  462  rm -rf .git
+  463  rm -rf *
+  464  vim file
+  465  git init ; git add . ;git commit -m "c1m"
+  466  git log
+  467  vim file
+  468  git status
+  469  git add . ;git commit -m "c2m"
+  470  cat file
+  471  git checkout -b feature
+  472  cat file
+  473  vim file
+  474  git status
+  475  git add . ;git commit -m "c1f"
+  476  git checkout master
+  477  vim file
+  478  git add . ;git commit -m "c3m"
+  479  git merge feature
+  480  cat file
+  481  vim file
+  482  git status
+  483  git add . ;git commit -m "c"
+  484  git log
+  485  cd ..
+  486  git clone https://github.com/mohanlucky2/jenkins-java-project.git
+  487  ls
+  488  cd jenkins-java-project/
+  489  ls
+  490  touch file
+  491  git add . ;git commit -m "c1"
+  492  ls
+  493  git push
+  494  git pull
+  495  ls
+  496  git push
+  497  git fetch
+  498  ls
+  499  git merge
+  500  ls
+
+
+
