@@ -306,6 +306,77 @@
   498  ls
   499  git merge
   500  ls
+10/09/2024:
+===========
+ 511  git checkout -b branch1
+  512  touch file2
+  513  git add . ; git commit -m "2-commit"
+  514  git remote -v
+  515  git status
+  516  ls -al
+  517  git push
+  518  git checkout main
+  519  touch file12
+  520  git add . ; git commit -m "3-commit"
+  521  git push
+  522  git checkout branch1
+  523  git push
+  524   git push --set-upstream origin branch1
+  525  git checkout main
+  526  git merge branch1
+  527  ls
+  528  git log
+  529  git show 26bf71f5bb0
+  530  ls
+  531  rm -rf .git/
+  532  ls
+  533  git init
+  534  vim .gitignore
+  535  git add .
+  536  git status
+  537  ls
+  538  ls -al
+  539  git status
+  540  git commit -m "1-commit"
+  541  git branch -M main
+  542  git remote add origin https://github.com/mohanlucky2/git-12.git
+  543  git push -u origin main
+  544  touch abc
+  545  git add . ; git commit -m "2-commit"
+  546  git push
+  547  git checkout -b b1
+  548  git branch
+  549  touch b1
+  550  git add . ; git commit -m "3-commit"
+  551  git checkout main
+  552  git merge b1
+  553  ls
+  554  git branch
+  555  git branch -d b1
+  556  ls
+  557  touch abcd
+  558  git add .
+  559  gitstatus
+  560  git status
+  561  git stash
+  562  git stash list
+  563  git status
+  564  touch file3
+  565  git add . ;git commit -m "4-commit"
+  566  git status
+  567  git stash drop stash@{0}
+  568  git status
+  569  ls
+  570  touch abc
+  571  git add . ;git commit -m "5-commit"
+  572  git status
+  573  touch abc1
+  574  git add .
+  575  git status
+  576  git stash
+  577  git stash list
+  578  git stash pop
+
 
 
 
